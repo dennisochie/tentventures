@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Tent Ventures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+        body {
+            background-color: #111827;
+            color: #fff;
+            padding-top: 80px;
+        }
+
+        .section-header h2 {
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .section-header p {
+            text-align: center;
+            color: #ccc;
+            margin-bottom: 3rem;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: #1e1e2f;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+        }
+
+        .info-icon {
+            font-size: 2rem;
+            color: #c1121f;
+            flex-shrink: 0;
+        }
+
+        .info-content h3 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .info-content p {
+            margin: 0;
+            color: #ccc;
+        }
+
+        .map-responsive {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .map-responsive iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .secure-contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: #1e1e2f;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .secure-contact-form label {
+            margin-bottom: 0.25rem;
+        }
+
+        .secure-contact-form input,
+        .secure-contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 6px;
+            border: 1px solid #444;
+            background: #2a2a3f;
+            color: #fff;
+        }
+
+        .secure-contact-form textarea {
+            resize: vertical;
+        }
+
+        .secure-submit-btn {
+            background: #c1121f;
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .secure-submit-btn:hover {
+            background: #8b0d17;
+        }
+
+        .secure-form-message {
+            margin-top: 0.5rem;
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #c1121f;
+            color: #fff;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+            transition: background 0.3s;
+        }
+
+        .scroll-top:hover {
+            background: #8b0d17;
+        }
+
+        .scroll-top.visible {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div id="header"></div>
+
+<main class="container py-5">
+
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p>Need event setup services? Contact Tent Ventures today.</p>
+        </div>
+
+        <div class="contact-container">
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-content">
+                        <h3>Our Location</h3>
+                        <p>To be updated</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-content">
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+254722466112" style="text-decoration:none; color:inherit;">+254722466112</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fab fa-whatsapp" style="color: #25D366;"></i></div>
+                    <div class="info-content">
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/254722466112" target="_blank" style="text-decoration:none; color:inherit;">+254722466112</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-content">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@tentventures.co.ke" style="text-decoration:none; color:inherit;">info@tentventures.co.ke</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item map-item">
+                    <div class="map-responsive">
+                        <p>To be updated</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6816.822001661311!2d36.818921342259166!3d-1.2862556863587542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6d9ac76b1%3A0x2ddd74d47025eabc!2sMazel%20Investment%20Ltd!5e1!3m2!1sen!2ske!4v1765440486379!5m2!1sen!2ske" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <form id="secureContactForm" class="secure-contact-form" action="https://formspree.io/f/xbddlrno" method="POST">
+                <div class="secure-form-group">
+                    <label for="sc-name">Full Name</label>
+                    <input type="text" id="sc-name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="secure-form-group">
+                    <label for="sc-email">Email Address</label>
+                    <input type="email" id="sc-email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="secure-form-group">
+                    <label for="sc-phone">Phone Number</label>
+                    <input type="tel" id="sc-phone" name="phone" placeholder="Enter your phone number">
+                </div>
+
+                <div class="secure-form-group">
+                    <label for="sc-subject">Subject</label>
+                    <input type="text" id="sc-subject" name="subject" placeholder="Message subject" required>
+                </div>
+
+                <div class="secure-form-group">
+                    <label for="sc-message">Message</label>
+                    <textarea id="sc-message" name="message" placeholder="Tell us about your event setup needs" required></textarea>
+                </div>
+
+                <button type="submit" class="secure-submit-btn">
+                    <span class="secure-btn-text">Send Message</span>
+                    <span class="secure-btn-spinner" style="display:none;">⏳</span>
+                </button>
+
+                <div class="secure-form-message"></div>
+            </form>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    ↑
+</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Include Header & Footer -->
+<script src="js/include.js"></script>
+<script>
+    loadHTML("header", "partials/header.html");
+    loadHTML("footer", "partials/footer.html");
+</script>
+
+<!-- Scroll to Top JS -->
+<script>
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) scrollTopBtn.classList.add('visible');
+        else scrollTopBtn.classList.remove('visible');
+    });
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+<!-- Contact Form JS -->
+<script>
+document.getElementById("secureContactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+    const formMessage = form.querySelector(".secure-form-message");
+    const submitBtn = form.querySelector(".secure-submit-btn");
+    const btnText = form.querySelector(".secure-btn-text");
+    const btnSpinner = form.querySelector(".secure-btn-spinner");
+
+    btnText.style.display = "none";
+    btnSpinner.style.display = "inline";
+
+    fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { "Accept": "application/json" }
+    })
+    .then(response => {
+        btnText.style.display = "inline";
+        btnSpinner.style.display = "none";
+
+        if (response.ok) {
+            formMessage.style.color = "green";
+            formMessage.textContent = "Thank you. Your message has been sent successfully.";
+            form.reset();
+        } else {
+            return response.json().then(data => {
+                formMessage.style.color = "red";
+                if (data.errors) formMessage.textContent = data.errors.map(err => err.message).join(", ");
+                else formMessage.textContent = "There was a problem submitting your message.";
+            });
+        }
+    })
+    .catch(() => {
+        btnText.style.display = "inline";
+        btnSpinner.style.display = "none";
+        formMessage.style.color = "red";
+        formMessage.textContent = "Network error. Please try again later.";
+    });
+});
+</script>
+
+</body>
+</html>
